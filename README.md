@@ -5,6 +5,16 @@
 This project analyses manufacturing production data to identify the main causes of downtime, evaluate production efficiency and investigate potential operator scheduling conflicts.
 
 Using **SQL Server and Power BI**, I performed data exploration, validation, transformation and analysis to generate insights that can support operational decision-making and manufacturing performance improvement.
+## Project KPI Summary
+
+| Key Performance Indicator | Result |
+|---|---:|
+| Total Production Batches | 645 |
+| Batches with Downtime | 363 |
+| Total Downtime Events | 885 |
+| Total Production Time Lost | 21.74 days |
+| Distinct Downtime Factors | 13 |
+| Exact Downtime-to-Delay Matches | 89% |
 
 ## Business Problem
 
@@ -47,50 +57,6 @@ This project focuses on three key questions:
 - Used SQL self-joins to identify overlapping production batches assigned to the same operator.
 - Applied Common Table Expressions (CTEs) and `UNION` to count distinct affected batches.
 - Compared average downtime between overlapping and non-overlapping production batches.
-- ## Key Findings and Business Insights
-
-### 1. Downtime Data Validation
-
-The analysis compared recorded manufacturing downtime against additional production time for 363 production batches with downtime records.
-
-**Key results:**
-- 363 production batches were evaluated.
-- 323 batches (89.0%) had an exact match between recorded downtime and additional production time.
-- 40 batches (11.0%) showed a discrepancy of just one minute.
-- No batches had discrepancies exceeding one minute.
-
-**Business Insight:**
-
-Recorded downtime closely aligned with additional production time across the evaluated batches, indicating strong consistency between these measures. However, this relationship does not establish that recorded downtime caused all additional production time.
-
-### 2. Operator Scheduling Overlaps
-
-A SQL self-join was used to investigate overlapping production batches assigned to the same operator.
-
-**Key results:**
-- 27 overlapping production batch pairs were identified.
-- 53 distinct production batches were involved in scheduling overlaps.
-
-**Business Insight:**
-
-Overlapping production assignments may indicate potential scheduling conflicts requiring operational review.
-
-### 3. Downtime Comparison by Scheduling Status
-
-The analysis compared average downtime between production batches with and without identified scheduling overlaps.
-
-| Scheduling Status | Average Downtime |
-|---|---:|
-| Overlapping batches | 45.25 minutes |
-| Non-overlapping batches | 48.84 minutes |
-
-**Business Insight:**
-
-Overlapping batches recorded approximately 3.59 fewer downtime minutes on average than non-overlapping batches.
-
-This suggests that scheduling overlaps were not associated with increased average downtime in the analysed dataset. However, additional investigation would be necessary to assess their wider operational impact.
-
-### 1. Downtime Factor Overview
 
 ![Downtime Factor Overview](Screenshots/Downtime%20Overview.png)
 
