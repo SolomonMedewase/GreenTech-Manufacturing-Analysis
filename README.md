@@ -89,3 +89,15 @@ The analysis compared average downtime between production batches with and witho
 Overlapping batches recorded approximately 3.59 fewer downtime minutes on average than non-overlapping batches.
 
 This suggests that scheduling overlaps were not associated with increased average downtime in the analysed dataset. However, additional investigation would be necessary to assess their wider operational impact.
+
+### 1. Downtime Factor Overview
+
+![Downtime Factor Overview](Screenshots/Downtime%20Overview.png)
+
+### 2. Downtime Duration Analysis
+
+![Downtime Duration Analysis](Screenshots/Duration%20Analysis.png)
+
+### 3. Operator Scheduling Analysis
+
+![Operator Scheduling Analysis](Screenshots/Operator%20Scheduling.png)
