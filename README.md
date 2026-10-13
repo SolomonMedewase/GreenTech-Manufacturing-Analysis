@@ -101,38 +101,50 @@ This suggests that scheduling overlaps were not associated with increased averag
 ### 3. Operator Scheduling Analysis
 
 ![Operator Scheduling Analysis](Screenshots/Operator%20Scheduling.png)
+## Key Findings and Business Insights
+
+### 1. Major Causes of Manufacturing Downtime
+Cleaning/Sanitation was the most frequently recorded downtime factor (86 occurrences), followed by Raw Material Shortage (77), Scheduling/Coordination Delays (76), and Machine Breakdown (75).
+
+**Insight:** These findings highlight sanitation processes, inventory availability, production coordination and equipment reliability as key areas requiring operational attention.
+
+### 2. Product Downtime Performance
+GreenFoam Hand Soap recorded the highest downtime frequency (323), followed by BioWipe Cleaning Sheets (204), RePack Recycled Packaging Film (185), and EcoWash Liquid Detergent (173).
+
+**Insight:** GreenFoam experienced the greatest number of recorded interruptions, with raw material shortages and machine breakdowns identified as important contributing factors. Further analysis relative to production volume would help establish whether its downtime rate is disproportionately high.
+
+### 3. Operator Performance and Downtime
+Paul, James and Emily were identified as operators associated with the greatest downtime.
+
+**Insight:** These patterns suggest opportunities to investigate workload distribution, equipment allocation and operational support. Higher downtime does not necessarily indicate individual operator underperformance.
+
+### 4. Production Time and Downtime Validation
+Of 363 production batches evaluated, 323 (89%) showed an exact match between recorded downtime and additional production time. The remaining 40 batches differed by only one minute.
+
+**Insight:** The close alignment indicates strong consistency between the two recorded measures, supporting confidence in the analysis.
+
+### 5. Operator Scheduling Conflicts
+SQL analysis identified 27 overlapping production batch pairs involving 53 distinct batches.
+
+Average downtime was 45.25 minutes for overlapping batches compared with 48.84 minutes for non-overlapping batches.
+
+**Insight:** Scheduling overlaps were not associated with higher average downtime in this dataset, but the identified overlaps warrant further investigation to assess potential resource-allocation conflicts.
 ## Business Recommendations
 
-Based on the manufacturing downtime and operator scheduling analysis, the following recommendations are proposed:
+Based on the analysis, the following actions are recommended:
 
-### 1. Strengthen Downtime Monitoring
-- Regularly monitor downtime frequency and duration using the Power BI dashboards.
-- Prioritise investigation of downtime factors with the greatest operational impact.
-- Establish periodic performance reviews to identify recurring production interruptions.
-
-### 2. Improve Operator Scheduling
-- Review the 27 identified overlapping production batch pairs to determine whether they represent genuine scheduling conflicts.
-- Introduce scheduling checks to flag potentially conflicting operator assignments.
-- Investigate workload distribution to support more effective production planning.
-
-### 3. Maintain Data Quality
-- Continue validating recorded downtime against additional production time.
-- Investigate discrepancies to maintain reliable operational reporting.
-- Implement routine data-quality checks to improve reporting consistency.
+1. **Improve sanitation and production coordination:** Review cleaning schedules and production sequencing to minimise avoidable interruptions.
+2. **Strengthen inventory management:** Introduce inventory monitoring and automated low-stock alerts to reduce raw material shortages.
+3. **Prioritise equipment reliability:** Investigate recurring machine breakdowns and implement targeted preventive maintenance.
+4. **Investigate product-specific downtime:** Review GreenFoam Hand Soap's production process, particularly material availability and equipment reliability.
+5. **Optimise operator scheduling:** Investigate overlapping batch assignments and review workload allocation to identify potential scheduling inefficiencies.
+6. **Maintain performance monitoring:** Use Power BI dashboards for regular downtime reviews, trend analysis and early identification of operational problems.
 
 ## Project Conclusion
 
-This project demonstrates the application of SQL Server and Power BI to manufacturing operations analysis.
+This project demonstrates the application of SQL Server and Power BI to manufacturing performance analysis.
 
-Through data exploration, validation, transformation and visualisation, the analysis identified downtime patterns, assessed production time consistency and investigated operator scheduling overlaps.
+The analysis identified major downtime factors, highlighted product-level production interruptions, validated recorded downtime against additional production time, and investigated operator scheduling patterns.
 
-The findings provide a foundation for data-driven operational monitoring and highlight opportunities to improve production planning, reporting accuracy and resource utilisation.
+The findings provide actionable insights to support improved production planning, inventory management, equipment maintenance and operational decision-making.
 
-## Future Improvements
-
-Potential extensions of this project include:
-
-- Developing automated downtime monitoring and reporting.
-- Introducing alerts for overlapping operator assignments.
-- Analysing production efficiency trends over longer periods.
-- Investigating relationships between downtime, product types and operator workload.
