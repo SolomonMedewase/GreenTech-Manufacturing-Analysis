@@ -101,3 +101,38 @@ This suggests that scheduling overlaps were not associated with increased averag
 ### 3. Operator Scheduling Analysis
 
 ![Operator Scheduling Analysis](Screenshots/Operator%20Scheduling.png)
+## Business Recommendations
+
+Based on the manufacturing downtime and operator scheduling analysis, the following recommendations are proposed:
+
+### 1. Strengthen Downtime Monitoring
+- Regularly monitor downtime frequency and duration using the Power BI dashboards.
+- Prioritise investigation of downtime factors with the greatest operational impact.
+- Establish periodic performance reviews to identify recurring production interruptions.
+
+### 2. Improve Operator Scheduling
+- Review the 27 identified overlapping production batch pairs to determine whether they represent genuine scheduling conflicts.
+- Introduce scheduling checks to flag potentially conflicting operator assignments.
+- Investigate workload distribution to support more effective production planning.
+
+### 3. Maintain Data Quality
+- Continue validating recorded downtime against additional production time.
+- Investigate discrepancies to maintain reliable operational reporting.
+- Implement routine data-quality checks to improve reporting consistency.
+
+## Project Conclusion
+
+This project demonstrates the application of SQL Server and Power BI to manufacturing operations analysis.
+
+Through data exploration, validation, transformation and visualisation, the analysis identified downtime patterns, assessed production time consistency and investigated operator scheduling overlaps.
+
+The findings provide a foundation for data-driven operational monitoring and highlight opportunities to improve production planning, reporting accuracy and resource utilisation.
+
+## Future Improvements
+
+Potential extensions of this project include:
+
+- Developing automated downtime monitoring and reporting.
+- Introducing alerts for overlapping operator assignments.
+- Analysing production efficiency trends over longer periods.
+- Investigating relationships between downtime, product types and operator workload.
